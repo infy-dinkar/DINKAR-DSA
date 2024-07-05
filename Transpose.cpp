@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int r;
+    int c;
+    cin>>r>>c;
+    int arr[r][c];
+    for (int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            cin>>arr[i][j];
+        }
+    }
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            cout<<arr[i][j]<<" ";
+            
+        }
+        cout<<endl;
+        int tras[c][r];
+        for (int i=0;i<c;i++){
+            for(int j=0;j<r;j++){
+                tras[i][j]=arr[j][i];
+
+            }
+        }
+         for (int i=0;i<c;i++){
+            for(int j=0;j<r;j++){
+                cout<<tras[i][j]<<" ";
+
+            }
+            cout<<endl;
+        }
+}
+}
